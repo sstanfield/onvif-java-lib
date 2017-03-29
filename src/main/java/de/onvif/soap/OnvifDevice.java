@@ -177,7 +177,7 @@ public class OnvifDevice {
 			serverImagingUri = replaceLocalIpWithProxyIp(capabilities.getImaging().getXAddr());
 		}
 
-		if (capabilities.getMedia() != null && capabilities.getEvents().getXAddr() != null) {
+		if (capabilities.getMedia() != null && capabilities.getEvents() != null && capabilities.getEvents().getXAddr() != null) {
 			serverEventsUri = replaceLocalIpWithProxyIp(capabilities.getEvents().getXAddr());
 		}
 	}
